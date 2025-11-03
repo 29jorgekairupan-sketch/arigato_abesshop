@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiamBes: Exclusive Indonesian Automotive Heritage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <a href="index.html" class="logo">LiamBes</a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Exclusive Collection</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#reviews">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button id="cart-btn" class="cart-button" aria-label="Shopping Cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </button>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+         <div id="cart-popup" class="cart-popup">
+            <h3>Your Selection</h3>
+            <ul id="cart-items">
+                <li>Your cart is empty.</li>
+            </ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button class="checkout-btn">Proceed to Inquiry</button>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero-banner">
+            <div class="hero-content">
+                <p class="tagline-sub">Rare. Authentic. Limited.</p>
+                <h1 class="tagline-main">Own a Piece of Indonesian Automotive Art.</h1>
+                <p class="tagline-desc">Discover the unique, limited-edition vehicles crafted with heritage and precision.</p>
+                <a href="#products" class="cta-button">Explore the Collection</a>
+            </div>
+            <div class="hero-image" style="background-image: url('images/hero-car.jpg');"></div>
+        </section>
+
+        <section id="products" class="product-collection container">
+            <h2 class="section-title">Our Exclusive Heritage Models</h2>
+
+            <div class="product-list">
+                
+                <div class="product-card" data-id="car-001" data-name="The Pindad Maung (Limited Edition)" data-price="75000">
+                    <img src="images/maung-car.jpg" alt="Pindad Maung Special Edition" class="product-image">
+                    <h3 class="product-name">The Pindad Maung (Limited Edition)</h3>
+                    <p class="product-price">$75,000 USD</p>
+                    <p class="product-description">
+                        **Rugged Elegance, Limited Run.** A street-legal masterpiece inspired by Indonesian military heritage, re-engineered for the global elite. Unmatched durability meets bespoke interior luxury. Only 50 units worldwide.
+                    </p>
+                    <button class="add-to-cart-btn">Add to Inquiry Cart</button>
+                </div>
+
+                <div class="product-card" data-id="car-002" data-name="The Gajah E-Concept" data-price="98500">
+                    <img src="images/gajah-e.jpg" alt="Gajah E-Concept Car" class="product-image">
+                    <h3 class="product-name">The Gajah E-Concept</h3>
+                    <p class="product-price">$98,500 USD</p>
+                    <p class="product-description">
+                        **Silent Power, Indonesian Soul.** Our futuristic electric vehicle, blending cutting-edge sustainable technology with the majestic lines inspired by Sumatra's wildlife. A forward-thinking collector's item.
+                    </p>
+                    <button class="add-to-cart-btn">Add to Inquiry Cart</button>
+                </div>
+
+                 <div class="product-card" data-id="car-003" data-name="The Javan Roadster (Bespoke Build)" data-price="120000">
+                    <img src="images/javan-roadster.jpg" alt="Javan Bespoke Roadster" class="product-image">
+                    <h3 class="product-name">The Javan Roadster (Bespoke Build)</h3>
+                    <p class="product-price">$120,000 USD</p>
+                    <p class="product-description">
+                        **Hand-Crafted Mastery.** A breathtaking two-seater roadster, built and customized in Jakarta with locally sourced, premium materials. It's not a car; it's a statement of unparalleled craftsmanship.
+                    </p>
+                    <button class="add-to-cart-btn">Add to Inquiry Cart</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="about-us container">
+            <h2 class="section-title">The LiamBes Promise: Heritage & Exclusivity</h2>
+            <div class="about-content">
+                <p>
+                    LiamBes was founded on the belief that **Indonesian automotive heritage** deserves a global stage. We don't just sell cars; we curate **rolling masterpieces**. Each vehicle in our collection is either a heavily customized, locally-produced gem or a rare, limited-run model that tells a compelling story of Indonesian ingenuity.
+                </p>
+                <p>
+                    Our focus is on **limited availability, unparalleled quality, and unique design**, ensuring that owning a LiamBes vehicle means joining an exclusive club of connoisseurs in the US and Europe who value authenticity over mass production. Experience the blend of tropical soul and precision engineering.
+                </p>
+            </div>
+        </section>
+
+        <section id="reviews" class="customer-reviews">
+            <h2 class="section-title">What Our Global Patrons Say</h2>
+            <div class="review-grid container">
+                
+                <blockquote class="review-card">
+                    <p>"The Maung I received is a showstopper. The custom paint and interior detail are flawless. Truly a unique addition to my collection in Texas. Flawless export process!"</p>
+                    <footer>— Alexander D., **Dallas, USA**</footer>
+                </blockquote>
+
+                <blockquote class="review-card">
+                    <p>"I was skeptical, but the Javan Roadster exceeded every expectation. It handles beautifully on the Swiss Alps roads. A work of art and engineering."</p>
+                    <footer>— Sofia K., **Zurich, Switzerland**</footer>
+                </blockquote>
+
+                <blockquote class="review-card">
+                    <p>"A company that truly understands exclusivity. The communication was excellent, and the E-Concept is an absolute head-turner in London. Highly recommend."</p>
+                    <footer>— Marcus P., **London, UK**</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-us container">
+            <h2 class="section-title">Inquire Today. Drive Tomorrow.</h2>
+            <p>
+                Our exclusive vehicles require a personal touch. Contact our specialist team for pricing, shipping details to the US/Europe, and customization options.
+            </p>
+            <form id="contact-form" class="contact-form">
+                <input type="text" name="name" placeholder="Your Full Name" required>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <textarea name="message" rows="5" placeholder="Your Inquiry (Model of Interest, Location, etc.)" required></textarea>
+                <button type="submit" class="cta-button">Send Exclusive Inquiry</button>
+            </form>
+            <p class="social-prompt">Follow our journey and see new limited releases:</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </section>
+
+         <a id="buy-now-mobile" href="https://wa.me/6283194686230?text=Hello%2C%20I'm%20interested%20in%20your%20exclusive%20Indonesian%20cars." target="_blank" class="mobile-buy-button">
+            Buy Now on WhatsApp
+        </a>
+
+    </main>
+
+    <footer>
+        <div class="footer-content container">
+            <div class="brand-info">
+                <h3>LiamBes Shop</h3>
+                <p>Curating the rarest and most exclusive Indonesian automotive heritage for global collectors.</p>
+                <p>&copy; 2025 LiamBes Shop. All Rights Reserved.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#contact">Shipping & Export</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
